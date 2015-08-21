@@ -1,4 +1,4 @@
-package com.cjstar.hugeimageload.brz;
+package com.cjstar.hugeimageload.utils;
 
 
 /*

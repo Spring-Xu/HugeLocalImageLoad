@@ -14,6 +14,7 @@ package com.cjstar.hugeimageload.hugelocalimageload;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
@@ -24,7 +25,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.cjstar.hugeimageload.brz.ImageLoaderUtils;
+import com.cjstar.hugeimageload.utils.ImageLoaderUtils;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
