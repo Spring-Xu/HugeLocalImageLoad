@@ -34,13 +34,10 @@
           <State>
             <id />
           </State>
-          <State>
-            <id>Android Lint</id>
-          </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>Android Lint</id>
+            <id>C/C++</id>
           </State>
         </selected-state>
       </profile-state>
@@ -64,9 +61,19 @@
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ProjectJDKs.UI">
+      <state key="Copyright.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

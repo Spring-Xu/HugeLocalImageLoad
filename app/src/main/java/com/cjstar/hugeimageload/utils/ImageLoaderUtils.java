@@ -48,6 +48,7 @@ public class ImageLoaderUtils {
 
         //preload set inJustDecodeBounds true, this will load bitmap into memory
         options.inJustDecodeBounds = true;
+        options.mCancel = true;
         //options.inPreferredConfig = Bitmap.Config.ARGB_8888;//default is Bitmap.Config.ARGB_8888
         BitmapFactory.decodeResource(resources, drawableId, options);
 
@@ -61,9 +62,10 @@ public class ImageLoaderUtils {
         //get sample size
         int sampleSize = getScaleInSampleSize(width, height, imgW, imgH);
         options.inSampleSize = sampleSize;
-        // Decode bitmap with inSampleSize set
         options.inJustDecodeBounds = false;
+        options.mCancel = false;
 
+        // Decode bitmap with inSampleSize set
         Log.d(TAG, "memory size:" + getBitmapSizeInMemory(width / sampleSize, height / sampleSize));
         Bitmap bitmap = BitmapFactory.decodeResource(resources, drawableId, options);
         Log.d(TAG, "w=" + bitmap.getWidth() + " h=" + bitmap.getHeight() + " bitmap size:" + bitmap.getRowBytes() * bitmap.getHeight());
@@ -85,6 +87,7 @@ public class ImageLoaderUtils {
 
         //preload set inJustDecodeBounds true, this will load bitmap into memory
         options.inJustDecodeBounds = true;
+        options.mCancel = true;
         //options.inPreferredConfig = Bitmap.Config.ARGB_8888;//default is Bitmap.Config.ARGB_8888
         BitmapFactory.decodeFile(imgPath, options);
 
@@ -100,6 +103,7 @@ public class ImageLoaderUtils {
         options.inSampleSize = sampleSize;
         // Decode bitmap with inSampleSize set
         options.inJustDecodeBounds = false;
+        options.mCancel = false;
 
         Log.d(TAG, "memory size:" + getBitmapSizeInMemory(width / sampleSize, height / sampleSize));
         Bitmap bitmap = BitmapFactory.decodeFile(imgPath, options);
